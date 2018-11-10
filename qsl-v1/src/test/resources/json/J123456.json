@@ -1,0 +1,20 @@
+{
+  "comment": [ "Project J123456: Lifestyle Script" ],
+  "id": [ "${project:j123456}" ],
+  "version": ["1.0.0"],
+  "timestamp": ["2018-10-09T23:22:12Z"],
+  "block":[{
+    "id": ["q1","$perform","${style:choice}"],
+    "text": ["$qtext", "Please choose from the answers below" ],
+    "block": [{
+      "id": [ "a01", "$multiple" ],
+      "text": [ "Answer One" ]
+    },{
+      "id": [ "a02", "$multiple" ],
+      "text": [ "Answer Two" ]
+    },{
+      "id": [ "dk", "$single" ],
+      "text": [ "Don't Know/ No Answer" ]
+    }]
+  }]
+}

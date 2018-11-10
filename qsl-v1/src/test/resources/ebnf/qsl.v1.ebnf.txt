@@ -1,0 +1,20 @@
+QSL V1 Language eBNF
+====================
+
+script             ::= '{' properties+ '}' ;
+
+property           ::= ( command ':' strings )
+                   |   block ;
+
+properties         ::= property [',' property]* ;
+
+block              ::= '"block"' ':' script ;
+
+quoted             ::= "' [^"|^'\"']* '"' ;
+
+strings            ::= '[' quoted [',' quoted]* ']' ;
+
+command            ::= '"id"'
+                   |   '"text"'
+                   ;
+
